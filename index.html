@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header__logo">
+                    <img src="icons/logoheader.svg" alt="" class="header__logo-img">
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__li">
+                            <a class="header__link" href="">Горячее</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Лучшее</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Свежее</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Подписки</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Сообщества</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Блоги</a>
+                        </li>
+                        <li class="header__li">
+                            <a class="header__link" href="">Курсы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="main">
+                <div class="main__post post">
+                    <div class="post__header">
+                        <div class="post__header-logo user-logo">
+                            <img src="icons/default-profile-picture-male-icon.svg" alt="">
+                        </div>
+                        <div class="post__header-name user-name">Вася-информатик</div>
+                        <div class="post__header-time submit-time">02.03.2023</div>
+                    </div>
+                    <div class="post__main">
+                        <div class="post__title">Ответ на пост «Почему в IT не любят HR (и не только)»⁠⁠</div>
+                        <div class="post__text">
+                            Из моего опыта. Пообщались с HR, прошел техсобес с лидом. Причем техсобес прошли на одной
+                            волне
+                            прям, какое-то взаимопонимание, даже не собес, а потрындели об опыте и технологиях. HR после
+                            собеса
+                            звонит и говорит, что очень положительный фидбэк, давайте оформляться. При этом ни условий,
+                            ни
+                            за,
+                            ни вообще ничего не обсуждали еще. Обсудили, она прям торопит, пять раз проговорили про
+                            деньги и
+                            испытательный срок. Она присылает оффер и я уже готов отписаться, что согласен, но тут
+                            замечаю,
+                            что
+                            в оффере значительно меньшая сумма, чем говорили.
+                            </br>Я ей пишу, а что так? А мне начальник сказал столько написать. Ну что, принимаете?
+                            Я говорю, что как-то странно, обсуждать одно, а в оффер втихую вставлять другое. И…. она
+                            удаляет
+                            всю
+                            переписку в телеге и на связь больше не выходит.
+                        </div>
+                        <div class="post__likes likes-block">
+                            <img class="likes-block__img" src="icons/heart.svg" alt="">
+                            <span class="likes-block__count">21</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__create-comment create-comment">
+                    <button class="create-comment__create-button">Создать комментарий</button>
+                    <form class="create-comment__form form" action="">
+                        <div class="form__input-block">
+                            <label for="" class="form__input-label">Ваше имя</label>
+                            <input class="form__input" type="text" name="" id="" placeholder="Введите имя">
+                        </div>
+                        <div class="form__textarea-block">
+                            <label for="" class="form__textarea-label">Комментарий</label>
+                            <textarea class="form__textarea" name="" id="" cols="30" rows="10"
+                                placeholder="Введите комментарий"></textarea>
+                        </div>
+                        <div class="form__time-block">
+                            <label for="" class="form__time-label">Формат даты: 09.03.2023. (День, месяц,
+                                год)</label>
+                            <input class="form__time" type="text" name="" id="" placeholder="Введите дату">
+                        </div>
+                        <button class="form__submit-button" type="submit">Оставить комментарий</button>
+                    </form>
+                </div>
+                <div class="main__comments-title">Комментарии</div>
+                <div class="main__comments">
+                    <div class="comments__item">
+                        <div class="comments__header">
+                            <div class="comments__header-logo user-logo">
+                                <img src="icons/default-profile-picture-male-icon.svg" alt="">
+                            </div>
+                            <div class="comments__header-name user-name">Саша-умник</div>
+                            <div class="comments__header-time submit-time">03.03.2023</div>
+                        </div>
+                        <div class="comments__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                            quaerat eligendi itaque, quas aspernatur, non repudiandae aliquid voluptate nisi assumenda
+                            dolor
+                            dolore! Id eaque non iure qui porro corporis doloribus?</div>
+                        <div class="comments__likes likes-block">
+                            <img class="likes-block__img" src="icons/heart.svg" alt="">
+                            <span class="likes-block__count">6</span>
+                        </div>
+                        <div class="comments__delete__block">
+                            <button class="comments__delete-button" type="">
+                                <img class="comments__delete-icon" src="icons/trash.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
